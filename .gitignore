@@ -5,3 +5,6 @@ __pycache__/
 .env
 .DS_Store
 autonomous-quant-research-agent/
+data/processed/
+outputs/
+reports/

@@ -70,6 +70,8 @@ The pipeline writes:
 - `outputs/charts/cumulative_factor_returns.png`
 - `outputs/charts/risk_score_distribution.png`
 
+These files are reproducible run artifacts, not hand-authored source files, so `data/processed/`, `outputs/`, and `reports/` are ignored by git. The repository keeps the small raw/evaluation sample data needed to rerun the demo locally.
+
 ## What Is Real vs. Demonstration
 
 The code path is real: extraction, scoring, factor construction, and regression testing all run end to end.
@@ -139,4 +141,3 @@ The project also estimates a predictive regression:
 ```text
 forward_return_i,t = alpha + beta * climate_risk_score_i,t + controls + error_i,t
 ```
-
